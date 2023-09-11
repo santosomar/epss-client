@@ -4,10 +4,10 @@ A Python client to query the FIRST EPSS API for CVE EPSS scores. This tool allow
 
 ## Installation
 
-Before installing the EPSS Client, make sure you have Python 3.6+ installed on your system. You can install the EPSS Client using pip:
+Before installing the EPSS Checker, make sure you have Python 3.6+ installed on your system. You can install the EPSS Checker using pip:
 
 ```sh
-pip install epss_client
+pip install epss-checker
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ pip install epss_client
 You can use the EPSS Client from the command line as follows:
 
 ```sh
-epss_client CVE-XXXX-XXXX
+epss-checker CVE-XXXX-XXXX
 ```
 
 Replace `CVE-XXXX-XXXX` with the actual CVE identifier you want to query. The tool will fetch the EPSS score for the given CVE identifier and display it in the console. The following is the help message of the tool:
@@ -38,23 +38,9 @@ options:
 ```
 
 
-## Development
+## Contributing
+To contribute to this project, please read the [CONTRIBUTING](CONTRIBUTING.md) file.
 
-If you want to contribute to the development of EPSS Client, you can clone the repository and set up a virtual environment:
-
-```sh
-git clone https://github.com/yourusername/epss_client
-cd epss_client
-python3 -m venv env
-source env/bin/activate  # On Windows, use `env\Scripts\activate`
-pip install -e .
-```
-
-You can now run the EPSS Client locally using:
-
-```sh
-epss_client CVE-XXXX-XXXX
-```
 
 
 ## License
