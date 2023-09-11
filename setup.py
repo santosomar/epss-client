@@ -17,7 +17,7 @@ setup(
     description='A client to query the FIRST EPSS API for CVE EPSS scores',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/santosomar/epss_client',
+    url='https://github.com/santosomar/epss-client',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
