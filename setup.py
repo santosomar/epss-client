@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='epss_client',
+    name='epss-checker',
     version='0.1.0',
     packages=find_packages(),
     install_requires=[
@@ -9,7 +9,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'epss_client=epss_client.epss_client:main',
+            'epss-checker=epss_checker.epss_checker:main',
         ],
     },
     author='Omar Santos',
