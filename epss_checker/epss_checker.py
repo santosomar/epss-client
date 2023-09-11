@@ -1,7 +1,7 @@
 '''
 EPSS Checker: A client to retrieve the EPSS score for a CVE ID from the FIRST EPSS API.
 Author: Omar Santos @santosomar
-Version: 1.0.0
+Version: 1.0
 '''
 
 # Import the required libraries
