@@ -11,3 +11,4 @@ epss_checker.egg-info/entry_points.txt
 epss_checker.egg-info/dependency_links.txt
 dist/epss_checker-0.2.0-py3-none-any.whl
 dist/epss_checker-0.1.0-py3-none-any.whl
+*.whl
