@@ -18,7 +18,25 @@ You can use the EPSS Client from the command line as follows:
 epss_client CVE-XXXX-XXXX
 ```
 
-Replace `CVE-XXXX-XXXX` with the actual CVE identifier you want to query. The tool will fetch the EPSS score for the given CVE identifier and display it in the console.
+Replace `CVE-XXXX-XXXX` with the actual CVE identifier you want to query. The tool will fetch the EPSS score for the given CVE identifier and display it in the console. The following is the help message of the tool:
+
+```sh
+┌──(omar㉿websploit)-[~]
+└─$ epss-checker -h
+usage: epss-checker [-h] [-s] cve_id
+
+ EPSS-Checker
+ Author: @santosomar
+ A tool to fetch EPSS scores for CVEs from the FIRST EPSS API.
+
+positional arguments:
+  cve_id        The CVE identifier to query (format: CVE-XXXX-XXXX)
+
+options:
+  -h, --help    show this help message and exit
+  -s, --silent  Only display the EPSS score, without any additional text
+```
+
 
 ## Development
 
@@ -37,6 +55,7 @@ You can now run the EPSS Client locally using:
 ```sh
 epss_client CVE-XXXX-XXXX
 ```
+
 
 ## License
 
