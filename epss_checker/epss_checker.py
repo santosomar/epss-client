@@ -6,7 +6,7 @@ Version: 1.0
 
 # Import the required libraries
 import requests
-import sys
+import argparse
 
 def get_epss_score(cve_id):
     url = f"https://api.first.org/data/v1/epss?cve={cve_id}"
@@ -26,13 +26,21 @@ def get_epss_score(cve_id):
         return f"Failed to retrieve data. HTTP Status code: {response.status_code}"
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python script.py CVE-XXXX-XXXX")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="""
+ EPSS-Checker
+ Author: @santosomar 
+ A tool to fetch EPSS scores for CVEs from the FIRST EPSS API.""", formatter_class=argparse.RawTextHelpFormatter)
+    parser.add_argument('cve_id', help='The CVE identifier to query (format: CVE-XXXX-XXXX)')
+    parser.add_argument('-s', '--silent', action='store_true', help='Only display the EPSS score, without any additional text')
     
-    cve_id = sys.argv[1]
-    epss_score = get_epss_score(cve_id)
-    print(f"The EPSS score for {cve_id} is: {epss_score}")
+    args = parser.parse_args()
+    
+    epss_score = get_epss_score(args.cve_id)
+    
+    if args.silent:
+        print(epss_score)
+    else:
+        print(f"The EPSS score for {args.cve_id} is: {epss_score}")
 
 if __name__ == "__main__":
     main()
