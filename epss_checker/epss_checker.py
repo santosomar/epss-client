@@ -9,6 +9,11 @@ import requests
 import argparse
 
 def get_epss_score(cve_id):
+    '''
+    This function retrieves the EPSS score for a CVE ID from the FIRST EPSS API.
+    Parameters:
+    cve_id (str): The CVE ID to retrieve the EPSS score for.
+    '''
     url = f"https://api.first.org/data/v1/epss?cve={cve_id}"
     response = requests.get(url)
     
