@@ -6,13 +6,13 @@ Here are some ways you can contribute:
 
 ## Reporting Bugs
 
-- **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/santosomar/epss_client/issues).
-- If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/santosomar/epss_client/issues/new). Be sure to include a **title and clear description**, as much relevant information as possible, and a **code sample** or an **executable test case** demonstrating the expected behavior that is not occurring.
+- **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/santosomar/epss-client/issues).
+- If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/santosomar/epss-client/issues/new). Be sure to include a **title and clear description**, as much relevant information as possible, and a **code sample** or an **executable test case** demonstrating the expected behavior that is not occurring.
 
 ## Suggesting Enhancements
 
-- **Determine [which repository the enhancement should be suggested in](https://github.com/santosomar/epss_client/issues)**.
-- **Perform a [cursory search](https://github.com/santosomar/epss_client/issues)** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
+- **Determine [which repository the enhancement should be suggested in](https://github.com/santosomar/epss-checker/issues)**.
+- **Perform a [cursory search](https://github.com/santosomar/epss-checker/issues)** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 - When you open a new enhancement suggestion, include as many details as possible. Fill in the template, including the steps that you imagine you would take if the feature you're requesting existed.
 
 ## Code Contribution
