@@ -1,4 +1,4 @@
-# EPSS Client
+# EPSS Checker
 
 A Python client to query the FIRST EPSS API for CVE EPSS scores. This tool allows users to easily fetch EPSS scores for different CVEs right from the command line.
 
